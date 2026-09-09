@@ -1,4 +1,4 @@
-package Lec6;
+package Lec7;
 
 public class Time_and_Space_Complexity {
 
