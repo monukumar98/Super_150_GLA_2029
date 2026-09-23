@@ -4,7 +4,7 @@ public class String_vs_StringBuilder {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		 StringTC();
+		// StringTC();
 		// StringBuilderTC();
 
 	}
