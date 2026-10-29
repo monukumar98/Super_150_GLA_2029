@@ -39,10 +39,15 @@ public class Rat_Chases_its_cheese {
 		}
 		maze[cr][cc] = 'X';
 		ans[cr][cc] = 1;
-		print(maze, cr - 1, cc, ans);// up
-		print(maze, cr, cc - 1, ans);// right
-		print(maze, cr + 1, cc, ans);// down
-		print(maze, cr, cc + 1, ans);// left
+		int[] r = { -1, 0, 1, 0 };
+		int[] c = { 0, -1, 0, 1 };
+		for (int i = 0; i < c.length; i++) {
+			print(maze, cr + r[i], cc + c[i], ans);
+		}
+//		print(maze, cr - 1, cc, ans);// up
+//		print(maze, cr, cc - 1, ans);// right
+//		print(maze, cr + 1, cc, ans);// down
+//		print(maze, cr, cc + 1, ans);// left
 		maze[cr][cc] = 'O';
 		ans[cr][cc] = 0;
 
