@@ -14,7 +14,7 @@ public class Construct_Smallest_Number_From_DI_String {
 		Stack<Integer> st = new Stack<>();
 		int c = 1;
 		for (int i = 0; i <= pattern.length(); i++) {
-			if (i == pattern.length() && pattern.charAt(i) == 'I') {
+			if (i == pattern.length() || pattern.charAt(i) == 'I') {
 				ans[i] = c++;
 				while (!st.isEmpty()) {
 					ans[st.pop()] = c++;
